@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CULT: cults</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07070a">
+<meta name="description" content="CULT: the launchpad built for cults to grow and last. Every fee a coin earns goes to the faithful who hold it.">
+<meta property="og:title" content="CULT: the launchpad built for cults to grow and last"><meta property="og:description" content="Every fee goes to the holders. Nothing is kept by the platform."><meta property="og:image" content="og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-page="cults"><main><div class="wrap">
+  <div class="phead"><div class="eyebrow">The altar</div><h1>Every cult</h1><p>Every cult and sect founded here, biggest first.</p></div>
+  <div class="toolbar">
+    <div id="kind" style="display:flex;gap:6px"><button class="chip on" data-k="all">All</button><button class="chip" data-k="cults">Cults</button><button class="chip" data-k="sects">Sects</button></div>
+    <select id="sort" class="ml" aria-label="Sort"><option value="mcap">Sort by market cap</option><option value="holders">Sort by faithful</option><option value="wearing">Sort by wearing the mark</option><option value="paid">Sort by paid to the faithful</option><option value="newest">Sort by newest</option></select>
+  </div>
+  <div class="tbl"><table><thead><tr><th>#</th><th>Cult</th><th class="num">Market cap</th><th class="num">Faithful</th><th class="num">Wearing</th><th class="num">Paid to the faithful</th><th class="num">Born</th></tr></thead><tbody id="rows"></tbody></table></div>
+</div></main>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CULT: launch</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07070a">
+<meta name="description" content="CULT: the launchpad built for cults to grow and last. Every fee a coin earns goes to the faithful who hold it.">
+<meta property="og:title" content="CULT: the launchpad built for cults to grow and last"><meta property="og:description" content="Every fee goes to the holders. Nothing is kept by the platform."><meta property="og:image" content="og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-page="launch"><main><div class="wrap">
+  <div class="phead"><div class="eyebrow">Launch</div><h1>Found a cult</h1><p>Every fee your coin earns goes to the faithful who hold it.</p></div>
+  <div class="lgrid">
+    <form id="form" novalidate>
+      <div class="types">
+        <button type="button" class="type on" data-t="cult"><b>A new cult</b><span>Paired with SOL.</span></button>
+        <button type="button" class="type sect" data-t="sect"><b>A sect of a cult</b><span>Paired with a cult here.</span></button>
+      </div>
+      <div class="field" id="parentWrap" style="display:none">
+        <label for="parent">Parent cult</label>
+        <input id="parent" list="parents" placeholder="$TICKER of the parent" autocomplete="off"><datalist id="parents"></datalist>
+        <div class="hint" id="parentHint">Every buy of your sect buys the parent first, so the sect pushes the parent up with every trade.</div><div class="hint" id="parentErr"></div>
+      </div>
+      <div class="field">
+        <label>Image</label>
+        <div class="drop" id="drop"><div class="pv" id="pv">PNG, JPG,<br>GIF, WebP</div><div><b id="imgName">Upload the cult's image</b><div class="hint">Holders who wear this picture on pump.fun or X earn more. Under 4 MB.</div><div class="hint" id="imgErr"></div></div></div>
+        <input type="file" id="img" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="name">Name <span class="c" id="nameC">0/32</span></label><input id="name" maxlength="32" placeholder="Order of the Eye"><div class="hint" id="nameErr"></div></div>
+        <div class="field"><label for="ticker">Ticker <span class="c" id="tickerC">0/10</span></label><input id="ticker" maxlength="10" placeholder="EYE"><div class="hint" id="tickerErr"></div></div>
+      </div>
+      <div class="field">
+        <label for="look">The mark <span class="c" id="lookC">0/120</span></label>
+        <input id="look" maxlength="120" placeholder="any animal wearing a black hood">
+        <div class="hint">Holders whose profile picture follows this look earn the wearing bonus, even with another animal, background colour or style. Write it plainly, like <b>any animal wearing a black hood</b>. Leave it empty and only the cult's own picture counts.</div>
+      </div>
+      <div class="field">
+        <label for="about">What is the cult about <span class="c" id="aboutC">0/500</span></label>
+        <textarea id="about" rows="3" maxlength="500" placeholder="Who you are, what you believe, why people should join."></textarea><div class="hint" id="aboutErr"></div>
+      </div>
+      <div class="field">
+        <label for="xh">X</label><input id="xh" placeholder="@handle or link">
+        <div class="hint">The cult's website is its own page on CULT, set for you.</div>
+      </div>
+      <div class="field">
+        <label for="buy">First buy</label><input id="buy" type="number" min="0" max="50" step="0.01" placeholder="0 SOL">
+        <div class="hint">Optional. Paid in SOL from your wallet in the same signing. Up to 50 SOL.</div><div class="hint" id="buyErr"></div>
+      </div>
+      <button class="btn primary xl" id="go" type="submit">Connect wallet to launch</button>
+    </form>
+    <aside class="side">
+      <div class="card"><h3>What happens</h3><dl class="kv">
+        <dt>Pair</dt><dd id="wPair">SOL</dd><dt>Fees to holders</dt><dd id="wFee">100%</dd><dt>Paid</dt><dd>in SOL every 3 min</dd>
+        <dt>Who counts</dt><dd>0.2 SOL held or more</dd><dt>Holding longer</dt><dd>climbs towards 4x</dd><dt>Bearing the mark</dt><dd>up to 1.5x</dd></dl></div>
+      <div class="card"><h3>Where the fees go</h3><p>Your launch sets the coin's pump.fun fee sharing to 100 percent for the CULT payout wallet and locks it. Nobody can change it afterwards, including you and us.</p>
+        <dl class="kv"><dt>Payout wallet</dt><dd id="payout"></dd></dl></div>
+      <div class="card"><h3>pump.fun standard</h3><dl class="kv">
+        <dt>Supply</dt><dd>1,000,000,000</dd><dt>Decimals</dt><dd>6</dd><dt>Launch</dt><dd>fair, bonding curve</dd><dt>Presale / team</dt><dd>none</dd><dt>Mint authority</dt><dd>revoked</dd><dt>Graduates to</dt><dd>PumpSwap</dd><dt>Fee sharing</dt><dd class="hot">100% locked</dd></dl></div>
+    </aside>
+  </div>
+</div></main>
+<script src="app.js"></script>
+</body></html>

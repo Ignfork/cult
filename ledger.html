@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CULT: ledger</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07070a">
+<meta name="description" content="CULT: the launchpad built for cults to grow and last. Every fee a coin earns goes to the faithful who hold it.">
+<meta property="og:title" content="CULT: the launchpad built for cults to grow and last"><meta property="og:description" content="Every fee goes to the holders. Nothing is kept by the platform."><meta property="og:image" content="og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-page="ledger"><main><div class="wrap">
+  <div class="phead"><div class="eyebrow g">Ledger</div><h1>Everything that moved</h1><p>Every fee collected and every tithe paid, newest first. Each money line links to its Solana transaction.</p></div>
+  <div class="boxes">
+    <div class="box"><div class="k">Collected</div><div class="v" id="tC">0.000 SOL</div></div>
+    <div class="box"><div class="k">Paid to the faithful</div><div class="v" id="tP" style="color:var(--abs)">0.000 SOL</div></div>
+    <div class="box"><div class="k">Network fees</div><div class="v" id="tN">0.000 SOL</div></div>
+    <div class="box"><div class="k">Waiting to be paid</div><div class="v" id="tW" style="color:var(--gold)">0.000 SOL</div></div>
+  </div>
+  <div class="toolbar" style="margin-top:18px">
+    <div id="ltype" style="display:flex;gap:6px"><button class="chip on" data-t="all">All</button><button class="chip" data-t="fee">Fees</button><button class="chip" data-t="payout">Tithes</button><button class="chip" data-t="wearing">Mark</button></div>
+    <button class="btn ml" id="dl">Download all</button>
+  </div>
+  <div class="tbl"><table><thead><tr><th>When</th><th>What</th><th class="num">Amount</th><th class="num">Transaction</th></tr></thead><tbody id="rows"></tbody></table></div>
+</div></main>
+<script src="app.js"></script>
+</body></html>

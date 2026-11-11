@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CULT: how it works</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07070a">
+<meta name="description" content="CULT: the launchpad built for cults to grow and last. Every fee a coin earns goes to the faithful who hold it.">
+<meta property="og:title" content="CULT: the launchpad built for cults to grow and last"><meta property="og:description" content="Every fee goes to the holders. Nothing is kept by the platform."><meta property="og:image" content="og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-page="how"><main><div class="wrap">
+  <div class="phead"><div class="eyebrow">How it works</div><h1>Coins grow when cults do</h1><p>CULT is a launchpad for cult coins. Every fee a coin earns goes to the faithful who hold it.</p></div>
+  <div class="steps">
+    <div class="step"><div><div class="n">01</div><h3>Found</h3></div><div>
+      <p>You launch from your own wallet. The launch sets the coin's pump.fun fee sharing to 100 percent for the CULT payout wallet and locks it, so it can never be changed.</p>
+      <p>The cult is listed with its own picture on the front page and in Cults. The three biggest sit on the altar.</p></div></div>
+    <div class="step"><div><div class="n">02</div><h3>Every fee to the faithful</h3></div><div>
+      <p>Every 3 minutes the payout desk collects the coin's creator fees and tithes them in SOL to every wallet holding at least 0.2 SOL worth of the coin. Nothing is kept by the platform. The only cost is the Solana network fee of each transaction.</p>
+      <p>Each holder's share is weighted by three things:</p>
+      <div class="code">share  =  amount held  ×  seconds held  ×  devotion  ×  mark bonus</div></div></div>
+    <div class="step"><div><div class="n">03</div><h3>Devotion, up to 4x</h3></div><div>
+      <p>A new follower counts 1x. The longer you hold, the more you count. The climb is fastest in the first weeks and gentler every day after, towards 4x. By day 100 the line is almost flat.</p>
+      <p>The age belongs to your coins. Buying more mixes new coins into your bag, so the age drops in proportion. Selling part of your bag cuts the age by the part you sold. Selling everything starts you again from 1x.</p>
+      <div class="code">devotion  =  1 + 3 × (1 − e^(−days held / 20))
+
+1 day  1.15x     10 days  2.18x     30 days  3.33x     100 days  3.98x</div></div></div>
+    <div class="step"><div><div class="n">04</div><h3>Bear the mark</h3></div><div>
+      <p>Followers who wear the cult as their profile picture are the ones working its bags. They earn more.</p>
+      <p>The mark counts two ways: the cult's own picture, or a picture that follows the cult's look, written at launch. If the look is "any animal wearing a black hood", a raven in a black hood on purple counts just like the original.</p>
+      <p>Your pump.fun profile picture counts 1.25x. Your X profile picture counts 1.25x once you sign in with X and link your wallet. Both together count 1.5x. Every holder is checked again every 30 minutes, and the bonus ends when the picture comes off.</p></div></div>
+    <div class="step"><div><div class="n">05</div><h3>Sects</h3></div><div>
+      <p>Anyone can start a sect of a cult. A sect is paired with its parent on pump.fun, so every buy of the sect buys the parent first. The sect is listed on its parent's page.</p>
+      <p>A sect carries its own 0.95 percent creator fee, paid in the parent's coin. All of it goes to the sect's holders in the parent's coin, unsold, as their reward for pumping the parent. Each holder decides whether to keep it or sell it.</p>
+      <p>The only tokens sold are the few that pay the Solana network fees, and the rent of a new token account for a holder who has none yet, taken from that holder's own share.</p></div></div>
+    <div class="step"><div><div class="n">06</div><h3>Every tithe on the ledger</h3></div><div>
+      <p>Every collection and every tithe is written to a public ledger with its Solana transaction. <a href="ledger.html">Open the ledger.</a></p></div></div>
+  </div>
+</div></main>
+<script src="app.js"></script>
+</body></html>
